@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gggenes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gggenes/gggenes_{{ version }}.tar.gz
-  sha256: e91971b7fefa74c0f0c62c5f9128a8fec6e9f3f7107b6db8400424132b5a17a6
+  sha256: 76be2ef63408339c71d0d7c9c21e9aec722ec52ee89a71ea4631d30c1094198e
 
 build:
   merge_build_host: True  # [win]
