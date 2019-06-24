@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = '0.4.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gggenes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gggenes/gggenes_{{ version }}.tar.gz
-  sha256: e91971b7fefa74c0f0c62c5f9128a8fec6e9f3f7107b6db8400424132b5a17a6
+  sha256: 76be2ef63408339c71d0d7c9c21e9aec722ec52ee89a71ea4631d30c1094198e
 
 build:
   merge_build_host: True  # [win]
@@ -25,12 +25,12 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-ggfittext >=0.4.3
+    - r-ggfittext >=0.8.0
     - r-ggplot2 >=2.2.1
     - r-rlang >=0.2.0
   run:
     - r-base
-    - r-ggfittext >=0.4.3
+    - r-ggfittext >=0.8.0
     - r-ggplot2 >=2.2.1
     - r-rlang >=0.2.0
 
@@ -40,7 +40,7 @@ test:
     - "\"%R%\" -e \"library('gggenes')\""  # [win]
 
 about:
-  home: https://github.com/wilkox/gggenes
+  home: https://wilkox.org/gggenes
   license: GPL-2
   summary: Provides a 'ggplot2' geom and helper functions for drawing gene arrow maps.
   license_family: GPL2
@@ -52,22 +52,22 @@ extra:
 
 # Package: gggenes
 # Title: Draw Gene Arrow Maps in 'ggplot2'
-# Version: 0.3.2
-# Authors@R: person("David", "Wilkins", email = "david@wilkox.org", role = c("aut", "cre"))
+# Version: 0.4.0
+# Authors@R: c(person("David", "Wilkins", email = "david@wilkox.org", role = c("aut", "cre")), person("Zachary", "Kurtz", email = "zdkurtz@gmail.com", role = c("ctb")))
 # Description: Provides a 'ggplot2' geom and helper functions for drawing gene arrow maps.
 # Depends: R (>= 3.3.0)
-# Imports: grid (>= 3.3.0), ggplot2 (>= 2.2.1), ggfittext (>= 0.4.3), rlang (>= 0.2.0)
+# Imports: grid (>= 3.3.0), ggplot2 (>= 2.2.1), ggfittext (>= 0.8.0), rlang (>= 0.2.0)
 # License: GPL-2
 # LazyData: true
-# RoxygenNote: 6.1.0
-# URL: https://github.com/wilkox/gggenes
+# RoxygenNote: 6.1.1
+# URL: https://wilkox.org/gggenes
 # BugReports: https://github.com/wilkox/gggenes/issues
 # Suggests: testthat, knitr, rmarkdown, vdiffr
 # VignetteBuilder: knitr
 # Encoding: UTF-8
 # NeedsCompilation: no
-# Packaged: 2018-11-07 08:50:45 UTC; wilkox
-# Author: David Wilkins [aut, cre]
+# Packaged: 2019-06-24 02:56:09 UTC; wilkox
+# Author: David Wilkins [aut, cre], Zachary Kurtz [ctb]
 # Maintainer: David Wilkins <david@wilkox.org>
 # Repository: CRAN
-# Date/Publication: 2018-11-07 09:10:03 UTC
+# Date/Publication: 2019-06-24 05:10:11 UTC
