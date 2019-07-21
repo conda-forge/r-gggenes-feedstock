@@ -1,7 +1,7 @@
 About r-gggenes
 ===============
 
-Home: https://github.com/wilkox/gggenes
+Home: https://wilkox.org/gggenes
 
 Package license: GPL-2
 
