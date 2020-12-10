@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gggenes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gggenes/gggenes_{{ version }}.tar.gz
-  sha256: 76be2ef63408339c71d0d7c9c21e9aec722ec52ee89a71ea4631d30c1094198e
+  sha256: 53a29d35d7169af18926e54a6adfa1bbcf09624cf40c109734841bf0c4b793e8
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,10 +41,11 @@ test:
 
 about:
   home: https://wilkox.org/gggenes
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Provides a 'ggplot2' geom and helper functions for drawing gene arrow maps.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
