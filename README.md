@@ -3,7 +3,7 @@ About r-gggenes
 
 Home: https://wilkox.org/gggenes
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gggenes-feedstock/blob/master/LICENSE.txt)
 
