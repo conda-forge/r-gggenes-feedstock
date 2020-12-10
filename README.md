@@ -5,11 +5,9 @@ Home: https://wilkox.org/gggenes
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gggenes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides a 'ggplot2' geom and helper functions for drawing gene arrow maps.
-
-
 
 Current build status
 ====================
