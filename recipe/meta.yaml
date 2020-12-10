@@ -41,10 +41,11 @@ test:
 
 about:
   home: https://wilkox.org/gggenes
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Provides a 'ggplot2' geom and helper functions for drawing gene arrow maps.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
