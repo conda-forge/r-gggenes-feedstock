@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gggenes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gggenes/gggenes_{{ version }}.tar.gz
-  sha256: 72c9fb0aacb7f9341f5eb71dbe983076723d2e6aab556789d173fc2926744023
+  sha256: 8d2da971b96b2650b479cf3d4adb90f23548cd1ccaaf651c386fa27e2fc40010
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
